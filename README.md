@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Book Search Engine
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+This application is a search engine for books. The user is presented with a search input field and submit button, as well as an option to login or signup. A search will result in several results, each featuring a book’s title, author, description, image, and a link to that book on the [Google Books](https://books.google.com/intl/en/googlebooks/about/index.html) site. One must be logged in to enable the capability to save books, which are compiled into a retrievable list with the option to remove previously saved titles.  
 
-In the project directory, you can run:
+Behind the scenes, it consists of a [Google Books API](https://developers.google.com/books) search engine, built with a [RESTful API](https://aws.amazon.com/what-is/restful-api/), which is then refactored to be a [GraphQL API](https://graphql.org/learn/) with [Apollo Server](https://www.apollographql.com/docs/apollo-server/). It is a full-stack MERN application ([MongoDB](https://www.mongodb.com/)-[Express.js](https://expressjs.com/)-[React](https://reactjs.org/)-[Node.js](https://nodejs.org/en/)), deployed to [Heroku](https://www.heroku.com/what) with a [MongoDB](https://www.mongodb.com/) database using [MongoDB Atlas](https://www.mongodb.com/atlas/database).
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Deployed Link
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This application is deployed through [Render] 
 
-### `npm test`
+## Installation and Usage
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+In order to run this application, you will want to `git clone` this repository so that the code is on your local machine. Run `npm i` while in the client folder in order to install all necessary front-end [Node.js](https://nodejs.org/en/) dependencies. Run `npm i` again while in the server folder in order to install any back-end dependancies. Then run `npm start` from either the root directory OR both the client and server folders CONCURRENTLY to launch the server.
 
-### `npm run build`
+This application is hosted at Port 3001, so typing: `http://localhost:3001/` into the address bar of your browser (while the server is running) should display the user interface.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Alternatively, you can simply visit my [Deployed Link]
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technologies Utilized
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+> [Javascript](https://www.javascript.com/)
 
-### `npm run eject`
+> [MongoDB](https://www.mongodb.com/)
+> - [MongoDB Atlas](https://www.mongodb.com/atlas/database)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+> [Express.js](https://expressjs.com/)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+> [React](https://reactjs.org/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+> [Node.js](https://nodejs.org/en/)
+> - [Mongoose npm](https://www.npmjs.com/package/mongoose)
+> - [Express.js npm](https://www.npmjs.com/package/express)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+> [Google Books API](https://developers.google.com/books)
 
-## Learn More
+> [RESTful API](https://aws.amazon.com/what-is/restful-api/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+> [GraphQL API](https://graphql.org/learn/)
+> - [Apollo Server](https://www.apollographql.com/docs/apollo-server/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Contributors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+-Caleb Baca 
 
-### Analyzing the Bundle Size
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This project is licensed under the MIT License &nbsp; &nbsp; &nbsp; [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Please click on the green MIT License Shield above to learn more about what the limitations of this license are.
